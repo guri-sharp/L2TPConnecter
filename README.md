@@ -4,14 +4,17 @@ YAMAHAの接続ツールが20カ所までの設定しかできないため自分
 PowerShellで制御しているので、WindowsでL2tp/ipsecが非対応はになるまでは使用できると思います。 
 
 
-そのうちやること
-- UIもっとかっこよく
-- iconつける
+そのうちやること  
+- UIもっとかっこよく  
+- iconつける  
 - 多言語化
+  
+  
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F1F11LHAIN)  
   
 以下はCopilotに書いてもらいました。  
 
+---
 # VPNClient
 
 VPNClientは、Windows環境でVPN接続の管理・操作を行うためのデスクトップアプリケーションです。  
