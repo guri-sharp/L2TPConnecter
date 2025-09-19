@@ -1,9 +1,9 @@
 ***事前共有鍵を使用したL2tp/ipsecでユーザー名とパスワードでの接続にしか対応していません。***
 
 YAMAHAの接続ツールが20カ所までの設定しかできないため自分用に作成しました。  
-PowerShellで制御しているので、WindowsでL2tp/ipsecが非対応はになるまでは使用できると思います。
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F1F11LHAIN)
+PowerShellで制御しているので、WindowsでL2tp/ipsecが非対応はになるまでは使用できると思います。  
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F1F11LHAIN)  
+  
 以下はCopilotに書いてもらいました。  
 
 # VPNClient
