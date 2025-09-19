@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VPNClient.Properties;
 
 namespace VPNClient
 {
@@ -64,7 +65,6 @@ namespace VPNClient
                 },
                 error =>
                 {
-                    // 必要ならログ出力やエラー処理
                 });
             model.IsConnected = isConnected;
         }
@@ -121,14 +121,14 @@ namespace VPNClient
             {
                 if (row.IsConnected)
                 {
-                    e.Value = "接続中";
+                    e.Value = Resources.ResourceManager.GetString("Connected");
                     e.CellStyle.BackColor = System.Drawing.Color.FromArgb(102, 205, 170); // ミントグリーン
                     e.CellStyle.ForeColor = System.Drawing.Color.FromArgb(44, 62, 80);    // ダークグレー
                     e.CellStyle.Font = new System.Drawing.Font(e.CellStyle.Font, System.Drawing.FontStyle.Bold);
                 }
                 else
                 {
-                    e.Value = "未接続";
+                    e.Value = Resources.ResourceManager.GetString("Disconnected");
                     e.CellStyle.BackColor = System.Drawing.Color.FromArgb(255, 182, 193); // ライトピンク
                     e.CellStyle.ForeColor = System.Drawing.Color.FromArgb(123, 36, 28);   // ブラウン
                     e.CellStyle.Font = new System.Drawing.Font(e.CellStyle.Font, System.Drawing.FontStyle.Italic);
@@ -175,8 +175,8 @@ namespace VPNClient
             if (row.IsConnected) return;
 
             var result = MessageBox.Show(
-                $"VPN設定「{row.VpnName}」を削除しますか？",
-                "削除確認",
+                Resources.ResourceManager.GetString("DeleteSettingConfirmationMessage").Replace("{VpnName}", row.VpnName),
+                Resources.ResourceManager.GetString("Confirmation"),
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Warning);
 

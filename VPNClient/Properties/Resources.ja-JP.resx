@@ -118,15 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Confirmation" xml:space="preserve">
-    <value>Confirmation</value>
+    <value>確認</value>
   </data>
   <data name="Connected" xml:space="preserve">
-    <value>Connected</value>
+    <value>接続中</value>
   </data>
   <data name="DeleteSettingConfirmationMessage" xml:space="preserve">
-    <value>Do you want to delete the VPN setting "{VpnName}"?</value>
+    <value>VPN設定「{VpnName}」を削除しますか？</value>
   </data>
   <data name="Disconnected" xml:space="preserve">
-    <value>Disconnected</value>
+    <value>切断中</value>
   </data>
 </root>

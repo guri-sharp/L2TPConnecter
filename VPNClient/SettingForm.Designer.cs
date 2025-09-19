@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingForm));
             this.vpnNameTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,152 +43,121 @@
             this.usernameTextBox = new System.Windows.Forms.TextBox();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.authenticationMethodComboBox = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // vpnNameTextBox
             // 
-            this.vpnNameTextBox.Location = new System.Drawing.Point(96, 47);
+            resources.ApplyResources(this.vpnNameTextBox, "vpnNameTextBox");
             this.vpnNameTextBox.Name = "vpnNameTextBox";
-            this.vpnNameTextBox.Size = new System.Drawing.Size(248, 23);
-            this.vpnNameTextBox.TabIndex = 0;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 50);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 15);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "設定名";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(40, 79);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 15);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "ホスト名";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 108);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "事前共有鍵";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(26, 166);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 15);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "ユーザー名";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(32, 195);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 15);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "パスワード";
             // 
             // cancelButton
             // 
-            this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.cancelButton.Location = new System.Drawing.Point(252, 274);
+            resources.ApplyResources(this.cancelButton, "cancelButton");
             this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(101, 35);
-            this.cancelButton.TabIndex = 3;
-            this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // okButton
             // 
-            this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.okButton.Location = new System.Drawing.Point(145, 274);
+            resources.ApplyResources(this.okButton, "okButton");
             this.okButton.Name = "okButton";
-            this.okButton.Size = new System.Drawing.Size(101, 35);
-            this.okButton.TabIndex = 3;
-            this.okButton.Text = "OK";
             this.okButton.UseVisualStyleBackColor = true;
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 9);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 21);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "設定";
             // 
             // serverAddressTextBox
             // 
-            this.serverAddressTextBox.Location = new System.Drawing.Point(96, 76);
+            resources.ApplyResources(this.serverAddressTextBox, "serverAddressTextBox");
             this.serverAddressTextBox.Name = "serverAddressTextBox";
-            this.serverAddressTextBox.Size = new System.Drawing.Size(248, 23);
-            this.serverAddressTextBox.TabIndex = 0;
             // 
             // presharedKeyTextBox
             // 
-            this.presharedKeyTextBox.Location = new System.Drawing.Point(96, 105);
+            resources.ApplyResources(this.presharedKeyTextBox, "presharedKeyTextBox");
             this.presharedKeyTextBox.Name = "presharedKeyTextBox";
-            this.presharedKeyTextBox.Size = new System.Drawing.Size(248, 23);
-            this.presharedKeyTextBox.TabIndex = 0;
             // 
             // usernameTextBox
             // 
-            this.usernameTextBox.Location = new System.Drawing.Point(96, 163);
+            resources.ApplyResources(this.usernameTextBox, "usernameTextBox");
             this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.Size = new System.Drawing.Size(248, 23);
-            this.usernameTextBox.TabIndex = 0;
             // 
             // passwordTextBox
             // 
-            this.passwordTextBox.Location = new System.Drawing.Point(96, 192);
+            resources.ApplyResources(this.passwordTextBox, "passwordTextBox");
             this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(248, 23);
-            this.passwordTextBox.TabIndex = 0;
             // 
             // authenticationMethodComboBox
             // 
+            resources.ApplyResources(this.authenticationMethodComboBox, "authenticationMethodComboBox");
             this.authenticationMethodComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.authenticationMethodComboBox.FormattingEnabled = true;
-            this.authenticationMethodComboBox.Location = new System.Drawing.Point(96, 134);
             this.authenticationMethodComboBox.Name = "authenticationMethodComboBox";
-            this.authenticationMethodComboBox.Size = new System.Drawing.Size(248, 23);
-            this.authenticationMethodComboBox.TabIndex = 4;
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // tableLayoutPanel1
+            // 
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.vpnNameTextBox, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.authenticationMethodComboBox, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label7, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.serverAddressTextBox, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.presharedKeyTextBox, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.usernameTextBox, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.passwordTextBox, 1, 5);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // SettingForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(365, 321);
-            this.Controls.Add(this.authenticationMethodComboBox);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.okButton);
             this.Controls.Add(this.cancelButton);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.passwordTextBox);
-            this.Controls.Add(this.usernameTextBox);
-            this.Controls.Add(this.presharedKeyTextBox);
-            this.Controls.Add(this.serverAddressTextBox);
-            this.Controls.Add(this.vpnNameTextBox);
-            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "SettingForm";
-            this.Text = "設定";
             this.Load += new System.EventHandler(this.SettingForm_Load);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,5 +179,7 @@
         private System.Windows.Forms.TextBox usernameTextBox;
         private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.ComboBox authenticationMethodComboBox;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

@@ -13,7 +13,7 @@ namespace VPNClient
                         -ServerAddress $serverAddress `
                         -TunnelType L2tp `
                         -L2tpPsk '{model.PresharedKey}' `
-                        -AuthenticationMethod MSCHAPv2 `
+                        -AuthenticationMethod {model.AuthenticationMethod} `
                         -EncryptionLevel Required `
                         -Force
 
