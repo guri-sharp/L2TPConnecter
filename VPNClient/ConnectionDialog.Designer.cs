@@ -51,11 +51,12 @@
             // 
             // logTextBox
             // 
-            resources.ApplyResources(this.logTextBox, "logTextBox");
             this.logTextBox.BackColor = System.Drawing.Color.DimGray;
             this.logTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.logTextBox, "logTextBox");
             this.logTextBox.ForeColor = System.Drawing.Color.White;
             this.logTextBox.Name = "logTextBox";
+            this.logTextBox.ReadOnly = true;
             // 
             // panel1
             // 
@@ -68,10 +69,11 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.closeButton);
             this.Name = "ConnectionDialog";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ConnectionDialog_FormClosing);
             this.Load += new System.EventHandler(this.ConnectionDialog_Load);
             this.Shown += new System.EventHandler(this.ConnectionDialog_Shown);
             this.panel1.ResumeLayout(false);

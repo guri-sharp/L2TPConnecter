@@ -19,9 +19,13 @@ namespace VPNClient
 
         }
 
+        private bool isProcessing = false;
         private async void ConnectionDialog_Shown(object sender, EventArgs e)
         {
             if (VpnSetting == null) return;
+            isProcessing = true;
+            closeButton.Enabled = false;
+            this.ControlBox = false;
 
             logTextBox.Clear();
 
@@ -37,6 +41,12 @@ namespace VPNClient
             }
 
             progressBar1.Style = ProgressBarStyle.Blocks;  // 完了時
+
+            isProcessing = false;
+
+            this.ControlBox = true;
+            closeButton.Enabled = true;
+
         }
 
         private async Task ConnectVpn(VpnSettingModel model)
@@ -100,6 +110,12 @@ namespace VPNClient
         private void closeButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void ConnectionDialog_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (isProcessing) e.Cancel = true;
+
         }
     }
 }
