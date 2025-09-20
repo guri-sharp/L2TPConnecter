@@ -17,9 +17,9 @@ PowerShellで制御しているので、WindowsでL2tp/ipsecが非対応はに�
 以下はCopilotに書いてもらいました。  
 
 ---
-# VPNClient
+# L2TPConnecter
 
-VPNClientは、Windows環境でVPN接続の管理・操作を行うためのデスクトップアプリケーションです。  
+L2TPConnecterは、Windows環境でVPN接続の管理・操作を行うためのデスクトップアプリケーションです。  
 複数のVPN設定を保存し、簡単に接続・切断・状態確認ができます。
 
 ## 主な機能
