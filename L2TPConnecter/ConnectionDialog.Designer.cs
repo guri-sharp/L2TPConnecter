@@ -1,4 +1,4 @@
-﻿namespace VPNClient
+﻿namespace L2TPConnecter
 {
     partial class ConnectionDialog
     {

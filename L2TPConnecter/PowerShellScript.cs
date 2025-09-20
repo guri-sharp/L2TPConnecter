@@ -1,4 +1,4 @@
-namespace VPNClient
+namespace L2TPConnecter
 {
     public static class PowerShellScript
     {

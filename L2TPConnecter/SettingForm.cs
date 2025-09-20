@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace VPNClient
+namespace L2TPConnecter
 {
     public partial class SettingForm : Form
     {

@@ -136,6 +136,9 @@
   <data name="vpnNameColumn.HeaderText" xml:space="preserve">
     <value>VpnName</value>
   </data>
+  <data name="vpnNameColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
   <data name="vpnNameColumn.Width" type="System.Int32, mscorlib">
     <value>250</value>
   </data>
@@ -145,19 +148,25 @@
   <data name="serverAddressColumn.HeaderText" xml:space="preserve">
     <value>ServerAddress</value>
   </data>
+  <data name="serverAddressColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="dataGridView1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 40</value>
+    <value>0, 51</value>
   </data>
   <data name="dataGridView1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+    <value>5, 6, 5, 6</value>
+  </data>
+  <data name="dataGridView1.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
   </data>
   <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>624, 544</value>
+    <value>780, 679</value>
   </data>
   <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -178,10 +187,13 @@
     <value>True</value>
   </data>
   <data name="editSettingButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 7</value>
+    <value>159, 9</value>
+  </data>
+  <data name="editSettingButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="editSettingButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 30</value>
+    <value>136, 38</value>
   </data>
   <data name="editSettingButton.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -202,10 +214,13 @@
     <value>0</value>
   </data>
   <data name="deleteSettingButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>242, 7</value>
+    <value>302, 9</value>
+  </data>
+  <data name="deleteSettingButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="deleteSettingButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 30</value>
+    <value>136, 38</value>
   </data>
   <data name="deleteSettingButton.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -226,10 +241,13 @@
     <value>1</value>
   </data>
   <data name="connectButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>357, 7</value>
+    <value>446, 9</value>
+  </data>
+  <data name="connectButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="connectButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 30</value>
+    <value>136, 38</value>
   </data>
   <data name="connectButton.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -250,10 +268,13 @@
     <value>2</value>
   </data>
   <data name="addSettingButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 7</value>
+    <value>15, 9</value>
+  </data>
+  <data name="addSettingButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="addSettingButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 30</value>
+    <value>136, 38</value>
   </data>
   <data name="addSettingButton.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -279,8 +300,11 @@
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>624, 40</value>
+    <value>780, 51</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -301,19 +325,19 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>96, 96</value>
+    <value>120, 120</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>624, 584</value>
+    <value>780, 730</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+    <value>5, 6, 5, 6</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>VPN Connection</value>
+    <value>L2TPConnecter</value>
   </data>
   <data name="&gt;&gt;statusColumn.Name" xml:space="preserve">
     <value>statusColumn</value>

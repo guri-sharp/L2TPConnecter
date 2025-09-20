@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading; // 追加
 
-namespace VPNClient
+namespace L2TPConnecter
 {
     internal static class Program
     {
@@ -16,11 +16,11 @@ namespace VPNClient
         static void Main()
         {
             bool createdNew;
-            using (var mutex = new Mutex(true, "VPNClient_Mutex", out createdNew))
+            using (var mutex = new Mutex(true, "L2TPConnecter_Mutex", out createdNew))
             {
                 if (!createdNew)
                 {
-                    //MessageBox.Show("すでにアプリケーションが起動しています。", "VPNClient", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //MessageBox.Show("すでにアプリケーションが起動しています。", "L2TPConnecter", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
 

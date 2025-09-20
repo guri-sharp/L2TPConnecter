@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using VPNClient.Properties;
+using L2TPConnecter.Properties;
 
-namespace VPNClient
+namespace L2TPConnecter
 {
     public partial class MainForm : Form
     {

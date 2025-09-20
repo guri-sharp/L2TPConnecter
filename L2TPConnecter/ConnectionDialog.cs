@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace VPNClient
+namespace L2TPConnecter
 {
     public partial class ConnectionDialog : Form
     {

@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Threading.Tasks;
 
-namespace VPNClient
+namespace L2TPConnecter
 {
     public static class PowerShell
     {

@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{AAF992B2-9663-4349-B754-E6D17C2452A5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>VPNClient</RootNamespace>
-    <AssemblyName>VPNClient</AssemblyName>
+    <RootNamespace>L2TPConnecter</RootNamespace>
+    <AssemblyName>L2TPConnecter</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

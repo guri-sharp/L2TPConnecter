@@ -1,4 +1,4 @@
-﻿namespace VPNClient
+﻿namespace L2TPConnecter
 {
     partial class MainForm
     {
@@ -31,14 +31,14 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.statusColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vpnNameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.serverAddressColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.editSettingButton = new System.Windows.Forms.Button();
             this.deleteSettingButton = new System.Windows.Forms.Button();
             this.connectButton = new System.Windows.Forms.Button();
             this.addSettingButton = new System.Windows.Forms.Button();
-            this.statusColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vpnNameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.serverAddressColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -66,6 +66,31 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
+            // 
+            // statusColumn
+            // 
+            this.statusColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
+            this.statusColumn.DataPropertyName = "IsConnected";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.statusColumn.DefaultCellStyle = dataGridViewCellStyle1;
+            resources.ApplyResources(this.statusColumn, "statusColumn");
+            this.statusColumn.Name = "statusColumn";
+            this.statusColumn.ReadOnly = true;
+            // 
+            // vpnNameColumn
+            // 
+            this.vpnNameColumn.DataPropertyName = "VpnName";
+            resources.ApplyResources(this.vpnNameColumn, "vpnNameColumn");
+            this.vpnNameColumn.Name = "vpnNameColumn";
+            this.vpnNameColumn.ReadOnly = true;
+            // 
+            // serverAddressColumn
+            // 
+            this.serverAddressColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.serverAddressColumn.DataPropertyName = "ServerAddress";
+            resources.ApplyResources(this.serverAddressColumn, "serverAddressColumn");
+            this.serverAddressColumn.Name = "serverAddressColumn";
+            this.serverAddressColumn.ReadOnly = true;
             // 
             // panel1
             // 
@@ -103,31 +128,6 @@
             this.addSettingButton.Name = "addSettingButton";
             this.addSettingButton.UseVisualStyleBackColor = true;
             this.addSettingButton.Click += new System.EventHandler(this.addSettingButton_Click);
-            // 
-            // statusColumn
-            // 
-            this.statusColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
-            this.statusColumn.DataPropertyName = "IsConnected";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.statusColumn.DefaultCellStyle = dataGridViewCellStyle1;
-            resources.ApplyResources(this.statusColumn, "statusColumn");
-            this.statusColumn.Name = "statusColumn";
-            this.statusColumn.ReadOnly = true;
-            // 
-            // vpnNameColumn
-            // 
-            this.vpnNameColumn.DataPropertyName = "VpnName";
-            resources.ApplyResources(this.vpnNameColumn, "vpnNameColumn");
-            this.vpnNameColumn.Name = "vpnNameColumn";
-            this.vpnNameColumn.ReadOnly = true;
-            // 
-            // serverAddressColumn
-            // 
-            this.serverAddressColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.serverAddressColumn.DataPropertyName = "ServerAddress";
-            resources.ApplyResources(this.serverAddressColumn, "serverAddressColumn");
-            this.serverAddressColumn.Name = "serverAddressColumn";
-            this.serverAddressColumn.ReadOnly = true;
             // 
             // MainForm
             // 
