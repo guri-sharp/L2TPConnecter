@@ -7,6 +7,9 @@ PowerShellで制御しているので、WindowsでL2tp/ipsecが非対応はに�
 そのうちやること  
 - UIもっとかっこよく  
 - iconつける  
+- ~~多言語化~~  
+- ~~mutex~~  
+- ~~高dpi対応~~  
   
   
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F1F11LHAIN)  
