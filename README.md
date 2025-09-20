@@ -1,53 +1,38 @@
-***事前共有鍵を使用したL2tp/ipsecでユーザー名とパスワードでの接続にしか対応していません。***
+L2TPConnecter
+Note: This tool only supports L2TP/IPsec connections using pre-shared keys with username and password authentication.
+Due to limitations in YAMAHA's connection tools (maximum 20 configurations), I created this for personal use.
+It uses PowerShell for control, so it should work on Windows until L2TP/IPsec becomes unsupported.
+To-do list
+• 	Make the UI cooler
+• 	Add an icon
+• 	~~Multilingual support~~
+• 	~~Mutex~~
+• 	~~High DPI support~~
 
-YAMAHAの接続ツールが20カ所までの設定しかできないため自分用に作成しました。  
-PowerShellで制御しているので、WindowsでL2tp/ipsecが非対応はになるまでは使用できると思います。 
 
-
-そのうちやること  
-- UIもっとかっこよく  
-- iconつける  
-- ~~多言語化~~  
-- ~~mutex~~  
-- ~~高dpi対応~~  
-  
-  
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F1F11LHAIN)  
+
+Overview
+L2TPConnecter is a desktop application for managing and operating VPN connections in Windows.
+It allows you to save multiple VPN configurations and easily connect, disconnect, and check connection status.
+Main Features
+• 	Register, edit, and delete multiple VPN configurations
+• 	Connect/disconnect/check status using PowerShell
+• 	Real-time connection status display (with color indicators)
+• 	Detailed logs for connection/disconnection events
+• 	Save/load configuration data as JSON files
+How to Use
+1. 	Launch the application and add VPN configurations.
+2. 	Select the VPN you want to connect to from the list and click the connect/disconnect button.
+3. 	Check progress and results in the dialog log.
+4. 	Settings are saved automatically and restored on next launch.
+Requirements
+• 	Windows 10/11
+• 	.NET Framework 4.8
+• 	PowerShell (standard installation)
+Notes
+• 	Administrator privileges may be required for VPN connections.
+• 	Since PowerShell commands are used, please be cautious about security policies.
+License
+This software is released under the MIT License.
   
-以下はCopilotに書いてもらいました。  
-
----
-# L2TPConnecter
-
-L2TPConnecterは、Windows環境でVPN接続の管理・操作を行うためのデスクトップアプリケーションです。  
-複数のVPN設定を保存し、簡単に接続・切断・状態確認ができます。
-
-## 主な機能
-
-- 複数VPN設定の登録・編集・削除
-- PowerShellを利用したVPN接続・切断・状態確認
-- 接続状況のリアルタイム表示（色分け）
-- 接続・切断時の詳細ログ表示
-- 設定情報のJSONファイル保存・読み込み
-
-## 使い方
-
-1. アプリ起動後、VPN設定を追加します。
-2. 一覧から接続したいVPNを選択し、接続ボタンで接続・切断を実行できます。
-3. 接続・切断の進捗や結果はダイアログで確認できます。
-4. 設定は自動的に保存され、次回起動時に復元されます。
-
-## 必要環境
-
-- Windows 10/11
-- .NET Framework 4.8
-- PowerShell（標準搭載）
-
-## 注意事項
-
-- VPN接続には管理者権限が必要な場合があります。
-- PowerShellコマンドを利用するため、セキュリティポリシーにご注意ください。
-
-## ライセンス
-
-本ソフトウェアはMITライセンスで公開されています。
