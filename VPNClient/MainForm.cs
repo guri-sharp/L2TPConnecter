@@ -21,6 +21,8 @@ namespace VPNClient
         }
         private void MainForm_Load(object sender, EventArgs e)
         {
+            
+            
             settings = VpnSettingModel.LoadSettings("settings.json");
             var t = AllConnectionCheck(sender, e);
 
