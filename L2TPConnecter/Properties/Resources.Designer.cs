@@ -79,6 +79,24 @@ namespace L2TPConnecter.Properties {
         }
         
         /// <summary>
+        ///   Connecting... に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Connecting {
+            get {
+                return ResourceManager.GetString("Connecting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Connection complete に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ConnectionComplete {
+            get {
+                return ResourceManager.GetString("ConnectionComplete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Do you want to delete the VPN setting &quot;{VpnName}&quot;? に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string DeleteSettingConfirmationMessage {
@@ -93,6 +111,33 @@ namespace L2TPConnecter.Properties {
         internal static string Disconnected {
             get {
                 return ResourceManager.GetString("Disconnected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Disconnecting... に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Disconnecting {
+            get {
+                return ResourceManager.GetString("Disconnecting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Disconnection complete に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string DisconnectionComplete {
+            get {
+                return ResourceManager.GetString("DisconnectionComplete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Error に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Error {
+            get {
+                return ResourceManager.GetString("Error", resourceCulture);
             }
         }
     }

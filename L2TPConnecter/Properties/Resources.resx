@@ -129,4 +129,19 @@
   <data name="Disconnected" xml:space="preserve">
     <value>Disconnected</value>
   </data>
+  <data name="Connecting" xml:space="preserve">
+    <value>Connecting...</value>
+  </data>
+  <data name="ConnectionComplete" xml:space="preserve">
+    <value>Connection complete</value>
+  </data>
+  <data name="Disconnecting" xml:space="preserve">
+    <value>Disconnecting...</value>
+  </data>
+  <data name="DisconnectionComplete" xml:space="preserve">
+    <value>Disconnection complete</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
 </root>

@@ -2,10 +2,12 @@ namespace L2TPConnecter
 {
     public static class PowerShellScript
     {
+        private const string prefix = @"vpn_";
+
         public static string GetConnectScript(VpnSettingModel model)
         {
             return $@"# VPNê⁄ë±ñº
-                    $vpnName = '{model.VpnName}'
+                    $vpnName = '{prefix + model.VpnName}'
                     $serverAddress = '{model.ServerAddress}'
 
                     # VPNê›íËÇÃí«â¡
@@ -25,7 +27,7 @@ namespace L2TPConnecter
         public static string GetDisconnectScript(VpnSettingModel model)
         {
             return $@"# VPNê⁄ë±ñº
-                        $vpnName = '{model.VpnName}'
+                        $vpnName = '{prefix + model.VpnName}'
 
                         # ê⁄ë±Çêÿíf
                         rasdial $vpnName /disconnect 
@@ -38,7 +40,7 @@ namespace L2TPConnecter
         public static string GetStatusScript(VpnSettingModel model)
         {
             return $@"
-                    $vpn = Get-VpnConnection -Name '{model.VpnName}'
+                    $vpn = Get-VpnConnection -Name '{prefix + model.VpnName}'
                     if ($vpn.ConnectionStatus -eq 'Connected') {{ 'Connected' }} else {{ 'Disconnected' }}
                     ";
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using L2TPConnecter.Properties;
+using System;
 using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,7 +17,7 @@ namespace L2TPConnecter
 
         private void ConnectionDialog_Load(object sender, EventArgs e)
         {
-
+            titleLabel.Text = "";
         }
 
         private bool isProcessing = false;
@@ -33,10 +34,12 @@ namespace L2TPConnecter
 
             if (!VpnSetting.IsConnected)
             {
+                titleLabel.Text = Resources.ResourceManager.GetString("Connecting");
                 await ConnectVpn(VpnSetting);
             }
             else
             {
+                titleLabel.Text = Resources.ResourceManager.GetString("Disconnecting");
                 await DisconnectVpn(VpnSetting);
             }
 
@@ -59,6 +62,18 @@ namespace L2TPConnecter
             );
 
             await ConnectionCheck(model);
+
+            if (!model.IsConnected)
+            {
+                script = PowerShellScript.GetDisconnectScript(model);
+                await PowerShell.Run(script, output => { }, error => { });
+
+                titleLabel.Text = Resources.ResourceManager.GetString("Error");
+            }
+            else
+            {
+                titleLabel.Text = Resources.ResourceManager.GetString("ConnectionComplete");
+            }
         }
 
         private async Task DisconnectVpn(VpnSettingModel model)
@@ -71,6 +86,8 @@ namespace L2TPConnecter
             );
 
             await ConnectionCheck(model);
+
+            titleLabel.Text = Resources.ResourceManager.GetString("DisconnectionComplete");
         }
         private async Task ConnectionCheck(VpnSettingModel model)
         {
