@@ -123,6 +123,7 @@ namespace L2TPConnecter
             PresharedKey = source.PresharedKey;
             Username = source.Username;
             Password = source.Password;
+            AuthenticationMethod = source.AuthenticationMethod;
         }
 
 
